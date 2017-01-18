@@ -1,3 +1,6 @@
-<div {{action "getValue"}} class="btn btn-primary">get content</div>
-<div id="editor"></div>
+<div class = "new-action-holder">
+  <div {{action "getValue"}} class="btn btn-primary">save snippet</div>
+{{input value=title placeholder="name your snippet here"}}
+</div>
+<div class="editor-holder"><div id="editor"></div></div>
 {{yield}}
