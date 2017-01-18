@@ -10,10 +10,13 @@ Router.map(function() {
   this.route('sign-in');
   this.route('change-password');
   this.route('users');
+  this.route('snippet', {
+    path: '/snippets/:snippet_id'
+  })
   this.route('snippets', function() {
     this.route('new');
-    this.route('edit');
   });
+
 });
 
 export default Router;

@@ -4,5 +4,7 @@
 <div class="text">{{snippet.text}}</div>
 {{#if editable}}
 <div {{action "deleteItem"}} class="btn btn-warning">remove</div>
+{{#link-to 'snippet' snippet.id}}edit{{/link-to}}
+
 {{/if}}
 </div>
