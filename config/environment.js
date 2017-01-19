@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   'use strict';
-  var ENV = {
+  const ENV = {
     modulePrefix: 'snippet-collector',
     environment: environment,
     rootURL: '/',
@@ -48,7 +48,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.locationType = 'hash';
     ENV.apiHost = "https://snippet-server-app.herokuapp.com";
     ENV.rootURL = "/capstone-project";
     ENV.locationType = 'hash';
