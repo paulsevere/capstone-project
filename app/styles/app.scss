@@ -20,8 +20,15 @@
 
 .individual-snippet {
   display: flex;
+  margin-top: 24px;
 
   div {
     margin-right: 30px;
+    width: 30%;
+    overflow: ellipsis;
+  }
+
+  .btn {
+    width: auto;
   }
 }

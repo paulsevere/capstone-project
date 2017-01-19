@@ -1,12 +1,13 @@
 /* jshint node: true */
 
-module.exports = function (environment) {
+module.exports = function(environment) {
   'use strict';
-  const ENV = {
-    modulePrefix: 'ga-wdi-boston.ember-auth',
+  var ENV = {
+    modulePrefix: 'snippet-collector',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    apiHost: "https://snippet-server-app.herokuapp.com",
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -30,8 +31,7 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    let port = +('GA'.split('').reduce((p, c) =>
-      p + c.charCodeAt().toString(16), '')
+    let port = +('GA'.split('').reduce((p, c) => p + c.charCodeAt().toString(16), '')
     );
     ENV.apiHost = `http://localhost:${port}`;
   }
