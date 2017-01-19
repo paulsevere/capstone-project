@@ -12,10 +12,7 @@ export default Ember.Component.extend({
   actions: {
     updateSnippet: function() {
       let content = this.editor.getValue();
-      // this.sendAction('save_snippet', {
-      //   text: content,
-      //   title: this.title
-      // })
+
       this.get('snippet').set('text', content)
       this.get('snippet').set('title', this.title);
       this.get('snippet').save();
