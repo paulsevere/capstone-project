@@ -10,7 +10,6 @@ export default Ember.Component.extend({
   },
   actions: {
     getValue: function() {
-      window.alert(this.title)
       let content = this.editor.getValue();
       this.sendAction('save_snippet', {
         text: content,
